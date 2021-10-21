@@ -269,6 +269,7 @@
     <ClInclude Include="..\src\ziplist.h" />
     <ClInclude Include="..\src\zipmap.h" />
     <ClInclude Include="..\src\zmalloc.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\deps\jemalloc-win\projects\jemalloc\proj.win32\vc2013\jemalloc.vcxproj">
@@ -286,6 +287,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="..\src\Win32_Interop\resources\EventLog.res" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RedisServer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\favicon.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
